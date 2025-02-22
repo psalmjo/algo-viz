@@ -1,0 +1,23 @@
+{
+    "name": "algo-viz",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts",
+            "npmGlobalPackages": ["typescript"]
+        }
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/algo-viz,type=bind",
+	"workspaceFolder": "/workspace/algo-viz",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+            ]
+        }
+    }
+}
