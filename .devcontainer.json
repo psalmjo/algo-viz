@@ -12,6 +12,10 @@
     },
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/algo-viz,type=bind",
 	"workspaceFolder": "/workspace/algo-viz",
+    "mounts": [
+        "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind",
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
