@@ -21,7 +21,22 @@
             "extensions": [
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
-            ]
+                "firefox-devtools.vscode-firefox-debug"
+            ],
+            "settings": {
+                "tasks": {
+                  "version": "2.0.0",
+                  "tasks": [
+                    {
+                        "type": "firefox",
+                        "request": "launch",
+                        "name": "Launch Firefox",
+                        "url": "https:/localhost:3000",
+                        "addonPath": "${workspaceFolder}"
+                    }
+                  ]
+                }
+            }
         }
     }
 }
